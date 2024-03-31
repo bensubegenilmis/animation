@@ -1,0 +1,32 @@
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: backgroundChange;
+    animation-duration: 4s;
+    animation-iteration-count: 2 ;   
+    /* animation-iteration-count 'a infinite verirsem sonsuza kadar uygular */
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+@keyframes backgroundChange
+{
+    from{
+        transform: translateX(0);
+        background-color: red;
+    }
+    to{
+        transform: translateX(300px);
+        background-color: aquamarine;
+        
+    }
+    /* from yerine 0% ---- to yerine 100% de diyebiliriz */
+}
